@@ -1,12 +1,9 @@
 # This Python file uses the following encoding: utf-8
-import os
-from pathlib import Path
 import sys
 import random
 
 from PySide6.QtWidgets import QApplication, QWidget, QFileDialog, QMessageBox
-from PySide6.QtCore import QFile
-from PySide6.QtUiTools import QUiLoader
+from ui_form import Ui_Widget
 
 
 class Widget(QWidget):
@@ -15,13 +12,9 @@ class Widget(QWidget):
         self.load_ui()
 
     def load_ui(self):
-        loader = QUiLoader()
-        path = os.fspath(Path(__file__).resolve().parent / "form.ui")
-        ui_file = QFile(path)
-        ui_file.open(QFile.ReadOnly)
-        loader.load(ui_file, self)
-        ui_file.close()
-        self.ui = loader.load(ui_file, self)
+
+        self.ui = Ui_Widget()
+        self.ui.setupUi(self)
         self.ui.lblFileName.setText("No file chosen")
         self.ui.btnSave.setEnabled(False)
         self.ui.btnChoose.clicked.connect(self.chooseFile)
@@ -36,11 +29,12 @@ class Widget(QWidget):
         fileFinal = filePath.rsplit("/", 1)[-1]
 
         if fileName:
+            self.ui.listParsed.setText(format(fileName[0]))
             self.ui.lblFileName.setText(fileFinal)
             self.ui.lblFileName.adjustSize()
             global unparsed
             unparsed = f.read()
-            self.ui.listView.setText(unparsed)
+            self.ui.listUnparsed.setText(unparsed)
             self.ui.btnSave.setEnabled(True)
 
     def saveFile(self):
@@ -63,6 +57,24 @@ class Widget(QWidget):
             f.write(letters_ + words_ + str(number_))
             f.write("\n")
             print(fileName)
+
+
+def format(fileName):
+    result = ""
+    f = open(fileName, "r")
+    message = f.read()
+
+    parsed = message.split("\n")
+
+    words = [parsed.split(" ", 1)[1] for parsed in parsed]
+    letters = [word[0] for word in parsed]
+
+    number = random.sample(range(1001, 9999), len(parsed))
+
+    for (letters_, words_, number_) in zip(letters, words, number):
+        result += letters_ + words_ + str(number_)
+        result += "\n"
+    return result
 
 
 if __name__ == "__main__":
