@@ -27,5 +27,4 @@ jobs:
        with:
         line-length: '81'
         path: '.'
-        include: 'apps'
         exclude: '(/*.html|/*.mo|/*.po|/*.png|/*.rst)' 
