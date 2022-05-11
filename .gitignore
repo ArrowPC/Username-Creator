@@ -70,3 +70,6 @@ Thumbs.db
 # --------
 *.dll
 *.exe
+src/dist/windows/Username Creator
+src/SULES_Staff.txt
+src/Username Creator.spec
