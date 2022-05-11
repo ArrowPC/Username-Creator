@@ -24,7 +24,7 @@ jobs:
 
     steps:
      - uses: RojerGS/python-black-check@master
-     - with:
+       with:
         line-length: '81'
         path: '.'
         include: 'apps'
