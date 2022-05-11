@@ -45,7 +45,6 @@ class Widget(QWidget):
         try:
             words = [parsed.split(" ", 1)[1] for parsed in parsed]
         except Exception:
-            print("yo")
             msg = QMessageBox()
             msg.setText("Choose correct file format pls")
             msg.show()
@@ -67,8 +66,13 @@ def format(fileName):
     message = f.read()
 
     parsed = message.split("\n")
+    try:
+        words = [parsed.split(" ", 1)[1] for parsed in parsed]
+    except Exception:
+        msg = QMessageBox()
+        msg.setText("Choose correct file format pls")
+        msg.show()
 
-    words = [parsed.split(" ", 1)[1] for parsed in parsed]
     letters = [word[0] for word in parsed]
 
     number = random.sample(range(1001, 9999), len(parsed))
