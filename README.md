@@ -30,7 +30,7 @@ Go to the project directory
 Install dependencies
 
 ```sh
-  pip install requirements.txt
+  pip install -r requirements.txt
 ```
 
 Start the application
@@ -43,8 +43,8 @@ Start the application
 ## Building
 Packaging the project and creating an executable
 
-### Using [Pyinstaller](https://github.com/pyinstaller/pyinstaller)
-1. Install Pyinstaller
+### Using [PyInstaller](https://github.com/pyinstaller/pyinstaller)
+1. Install PyInstaller
 ```sh
   pip install pyinstaller
 ```
@@ -52,7 +52,7 @@ Packaging the project and creating an executable
 ```sh
   cd username-creator/src
 ```
-3. Run pyinstaller 
+3. Run ``pyinstaller``
 ```sh
   pyinstaller --name="Username Creator" --clean -y --windowed --dist ./dist/bin --workpath /tmp --onefile --icon=app.ico main.py
 ```

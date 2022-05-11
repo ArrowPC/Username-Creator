@@ -16,10 +16,11 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+    
+jobs:
+  build:
 
-uses: RojerGS/python-black-check@master
-with:
-  line-length: '81'
-  path: '.'
-  include: 'apps'
-  exclude: '(/*.html|/*.mo|/*.po|/*.png|/*.rst)'
+    runs-on: ubuntu-latest
+
+    steps:
+     - uses: RojerGS/python-black-check@master 
