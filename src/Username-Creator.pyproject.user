@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 7.0.1, 2022-05-06T13:12:49. -->
+<!-- Written by QtCreator 7.0.0, 2022-05-11T12:31:04. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
-  <value type="QByteArray">{ab9f1668-dc09-42fb-8e92-c23890598727}</value>
+  <value type="QByteArray">{09e45c61-6ce8-44cd-a93a-6b3d2a331464}</value>
  </data>
  <data>
   <variable>ProjectExplorer.Project.ActiveTarget</variable>
@@ -70,7 +70,9 @@
    <valuemap type="QVariantMap" key="AutoTest.CheckStates"/>
    <value type="int" key="AutoTest.RunAfterBuild">0</value>
    <value type="bool" key="AutoTest.UseGlobal">true</value>
-   <valuelist type="QVariantList" key="ClangCodeModel.CustomCommandLineKey"/>
+   <valuelist type="QVariantList" key="ClangCodeModel.CustomCommandLineKey">
+    <value type="QString">-fno-delayed-template-parsing</value>
+   </valuelist>
    <value type="bool" key="ClangCodeModel.UseGlobalConfig">true</value>
    <value type="QString" key="ClangCodeModel.WarningConfigId">Builtin.BuildSystem</value>
    <valuemap type="QVariantMap" key="ClangTools">
@@ -89,9 +91,9 @@
   <variable>ProjectExplorer.Project.Target.0</variable>
   <valuemap type="QVariantMap">
    <value type="QString" key="DeviceType">Desktop</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Qt 6.2.4 for macOS</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Qt 6.2.4 for macOS</value>
-   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">qt.qt6.624.clang_64_kit</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Desktop (x86-windows-msvc2022-pe-32bit)</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Desktop (x86-windows-msvc2022-pe-32bit)</value>
+   <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">{0ee4991c-c966-4d08-9f30-3a3d5a0334c8}</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveBuildConfiguration">-1</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
    <value type="qlonglong" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
@@ -116,37 +118,18 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">/Users/omar/code-repos/Username-Creator/main.py</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration./Users/omar/code-repos/Username-Creator/main.py</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/omar/code-repos/Username-Creator/main.py</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{a1bd2711-62ce-433c-bcd0-b99c0022a534}</value>
-    <value type="QString" key="PythonEditor.RunConfiguation.Script">/Users/omar/code-repos/Username-Creator/main.py</value>
-    <value type="QString" key="RunConfiguration.Arguments">black /Users/omar/code-repos/Username-Creator/main.py &amp;&amp; /Users/omar/code-repos/Username-Creator/main.py</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">C:/Users/Cisco/Downloads/ICTPRG-Omar/username-creator/src/main.py</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">PythonEditor.RunConfiguration.C:/Users/Cisco/Downloads/ICTPRG-Omar/username-creator/src/main.py</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">C:/Users/Cisco/Downloads/ICTPRG-Omar/username-creator/src/main.py</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Interpreter">{8cf2f02c-8263-49c4-9b5b-35b0707a585b}</value>
+    <value type="QString" key="PythonEditor.RunConfiguation.Script">C:\Users\Cisco\Downloads\ICTPRG-Omar\username-creator\src\main.py</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="QString" key="RunConfiguration.WorkingDirectory.default">/Users/omar/code-repos/Username-Creator</value>
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/Cisco/Downloads/ICTPRG-Omar/username-creator/src</value>
    </valuemap>
-   <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.1">
-    <value type="bool" key="Analyzer.Perf.Settings.UseGlobalSettings">true</value>
-    <value type="bool" key="Analyzer.QmlProfiler.Settings.UseGlobalSettings">true</value>
-    <value type="bool" key="Analyzer.Valgrind.Settings.UseGlobalSettings">true</value>
-    <valuelist type="QVariantList" key="CustomOutputParsers"/>
-    <value type="int" key="PE.EnvironmentAspect.Base">2</value>
-    <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.CustomExecutableRunConfiguration.Executable">/Users/omar/code-repos/Username-Creator/main.py</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">yo</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">ProjectExplorer.CustomExecutableRunConfiguration</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey"></value>
-    <value type="QString" key="RunConfiguration.Arguments">black /Users/omar/code-repos/Username-Creator/main.py &amp;&amp; /Users/omar/code-repos/Username-Creator/main.py</value>
-    <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
-    <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
-    <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
-    <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
-    <value type="bool" key="RunConfiguration.UseTerminal">false</value>
-   </valuemap>
-   <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">2</value>
+   <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>
  </data>
  <data>

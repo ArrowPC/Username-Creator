@@ -1,8 +1,10 @@
 # This Python file uses the following encoding: utf-8
 import sys
 import random
+import qdarktheme
 
 from PySide6.QtWidgets import QApplication, QWidget, QFileDialog, QMessageBox
+from PySide6.QtGui import QPalette
 from ui_form import Ui_Widget
 
 
@@ -52,7 +54,7 @@ class Widget(QWidget):
         fileName = QFileDialog.getSaveFileName(
             self, "Save formatted file", "SULES_Usernames", "Text Files (*.txt)"
         )
-        f = open(fileName[0], "x", encoding="utf8")
+        f = open(fileName[0], "a", encoding="utf8")
         for (letters_, words_, number_) in zip(letters, words, number):
             f.write(letters_ + words_ + str(number_))
             f.write("\n")
@@ -80,5 +82,6 @@ def format(fileName):
 if __name__ == "__main__":
     app = QApplication([])
     widget = Widget()
+    app.setStyleSheet(qdarktheme.load_stylesheet())
     widget.show()
     sys.exit(app.exec())
