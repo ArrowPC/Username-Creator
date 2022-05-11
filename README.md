@@ -30,7 +30,7 @@ Go to the project directory
 Install dependencies
 
 ```sh
-  pip install requirements.txt
+  pip install -r requirements.txt
 ```
 
 Start the application
