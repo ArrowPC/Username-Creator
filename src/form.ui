@@ -13,6 +13,10 @@
   <property name="windowTitle">
    <string>Username Creator</string>
   </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>app.ico</normaloff>app.ico</iconset>
+  </property>
   <property name="accessibleName">
    <string>Username Creator</string>
   </property>

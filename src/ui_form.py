@@ -3,7 +3,7 @@
 ################################################################################
 ## Form generated from reading UI file 'form.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.2.4
+## Created by: Qt User Interface Compiler version 6.3.0
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -24,6 +24,9 @@ class Ui_Widget(object):
         if not Widget.objectName():
             Widget.setObjectName(u"Widget")
         Widget.resize(339, 309)
+        icon = QIcon()
+        icon.addFile(u"app.ico", QSize(), QIcon.Normal, QIcon.Off)
+        Widget.setWindowIcon(icon)
         self.gridLayout = QGridLayout(Widget)
         self.gridLayout.setObjectName(u"gridLayout")
         self.verticalLayout_2 = QVBoxLayout()
