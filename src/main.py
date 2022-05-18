@@ -4,7 +4,6 @@ import random
 import qdarktheme
 
 from PySide6.QtWidgets import QApplication, QWidget, QFileDialog, QMessageBox
-from PySide6.QtGui import QPalette
 from ui_form import Ui_Widget
 
 
@@ -61,23 +60,31 @@ class Widget(QWidget):
 
 
 def format(fileName):
-    result = ""
-    f = open(fileName, "r")
-    message = f.read()
+    result = ""  # Create an empty string
+    f = open(fileName, "r")  # Open the file parameter 'fileName'
+    message = f.read()  # read the file contents and store to a variable
 
-    parsed = message.split("\n")
-    try:
-        words = [parsed.split(" ", 1)[1] for parsed in parsed]
+    parsed = message.split(
+        "\n"
+    )  # Split the contents by a new line creating an array with each name on an index
+    try:  # Catch the error if the file wasn't in correct format
+        words = [parsed.split(" ", 1)[1] for parsed in parsed]  # Get last name
     except Exception:
         msg = QMessageBox()
-        msg.setText("Choose correct file format pls")
+        msg.setText("Choose correct file format")
         msg.show()
 
-    letters = [word[0] for word in parsed]
+    letters = [
+        word[0] for word in parsed
+    ]  # Gets first letter of each name in the array
 
-    number = random.sample(range(1001, 9999), len(parsed))
+    number = random.sample(
+        range(1001, 9999), len(parsed)
+    )  # Generate a random 4 digit integer
 
-    for (letters_, words_, number_) in zip(letters, words, number):
+    for (letters_, words_, number_) in zip(
+        letters, words, number
+    ):  # For loop that apends first letter, last name, and 4 digit number to the empty string 'result'
         result += letters_ + words_ + str(number_)
         result += "\n"
     return result
