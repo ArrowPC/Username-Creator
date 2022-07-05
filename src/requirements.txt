@@ -25,6 +25,6 @@ shiboken6==6.3.0
 snowballstemmer==2.2.0
 toml==0.10.2
 tomli==2.0.1
-ujson==5.2.0
+ujson==5.4.0
 wrapt==1.14.1
 yapf==0.32.0
